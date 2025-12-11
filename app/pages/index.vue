@@ -1,1 +1,8 @@
-<template><p class="text-2xl">test</p></template>
+<template>
+  <div class="w-full bg-background text-foreground overflow-hidden">
+    <IndexHero />
+    <IndexRoutinesPortfolio />
+    <IndexWhyChooseUs />
+    <IndexCallToAction />
+  </div>
+</template>

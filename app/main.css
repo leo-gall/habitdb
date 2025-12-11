@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: "VendSans";
@@ -13,3 +11,23 @@ body {
   font-family: "VendSans", sans-serif;
 }
 
+
+@theme {
+  --color-background: oklch(0.99 0 0);
+  --color-foreground: oklch(0.1 0 0);
+  --color-card: oklch(0.98 0 0);
+  --color-card-foreground: oklch(0.1 0 0);
+  --color-primary: oklch(0.08 0 0);
+  --color-primary-foreground: oklch(0.99 0 0);
+  --color-secondary: oklch(0.95 0 0);
+  --color-secondary-foreground: oklch(0.1 0 0);
+  --color-muted: oklch(0.92 0 0);
+  --color-muted-foreground: oklch(0.55 0 0);
+  --color-border: oklch(0.94 0 0);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
