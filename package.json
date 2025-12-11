@@ -13,6 +13,7 @@
     "@nuxt/eslint": "1.12.1",
     "@nuxt/hints": "1.0.0-alpha.3",
     "@nuxt/image": "2.0.0",
+    "@nuxtjs/seo": "3.2.2",
     "@tailwindcss/vite": "^4.1.17",
     "eslint": "^9.0.0",
     "lucide-vue-next": "^0.560.0",
