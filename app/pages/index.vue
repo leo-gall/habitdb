@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-background text-foreground overflow-hidden">
     <IndexHero />
-    <IndexRoutinesPortfolio />
+    <IndexTopRoutines />
     <IndexWhyChooseUs />
     <IndexCallToAction />
   </div>

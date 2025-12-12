@@ -103,9 +103,10 @@
                   class="text-sm font-medium text-primary my-3 pb-3"
                 >
                   {{
-                    habit.streakMotivations
-                      ?.filter((item) => habit.streak >= item.streak)
-                      .slice(-1)[0]?.message
+                    getStreakMotivation(
+                      habit.streak,
+                      habit.streakMotivations || []
+                    )
                   }}
                 </p>
               </div>
@@ -126,6 +127,16 @@ interface Habit {
   streak: number;
   checked: boolean;
   streakMotivations?: { streak: number; message: string }[];
+}
+
+function getStreakMotivation(
+  streak: number,
+  motivations: { streak: number; message: string }[]
+): string | null {
+  const motivation = motivations
+    .filter((item) => streak >= item.streak)
+    .slice(-1)[0];
+  return motivation ? motivation.message : null;
 }
 
 function checkHabit(index: number) {
